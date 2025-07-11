@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próximo Piso - Inmobiliaria en Guadalajara</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary: #bb9000;
+      --dark: #111111;
+      --light: #ffffff;
+      --text: #333;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      height: 7vh;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      text-shadow: 1px 1px 4px #000;
+      position: relative;
+      background-color: var(--dark);
+    }
+    
+    header img {
+      margin-right: 5px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: left;
+      max-width: 100px;
+      width: 80px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .logofont {
+      font-family: "Comfortaa", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 30px;
+      color: #bf9000;
+      font-weight: lighter;
+    }
+    header p {
+      font-size: 1.5rem;
+      align-items: baseline;
+      
+    }
+
+    .hero{ 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background: url('https://upload.wikimedia.org/wikipedia/commons/5/5a/Andares_Guadalajara_3.jpg') center/cover no-repeat;
+      height: 80vh;
+      color: white;
+      text-shadow: 5px 2px 5px black;
+      text-align: center;
+      
+      position: relative;
+      font-size: 20px;
+      background-image: url("./assets/bg-blurred.jpg");
+      background-color: #000;
+    }
+    .descripcion{
+      display: contents;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .contacto {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+    .redes {
+      margin-top: 2rem;
+      display: inline;
+      align-items: center;
+      
+    }
+    .container{
+      display: inline;
+      align-items: center;
+      justify-content: center;
+    }
+    .redes a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+    .icon{
+      width: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /*phone size query*/
+    @media (max-width: 768px) {
+      .logofont{
+        font-size: 20px;
+      }
+      .descripcion{
+      display: contents;
+      justify-content: center;
+    }
+
+    .container{
+      font-size: medium;
+      margin-right: 10%;
+      margin-top: 20%;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./assets/logo.jpg"><h1 class="logofont">PRÓXIMO PISO INMOBILIARIA</h1>
+    
+  </header>
+  <div class="hero">
+    <img src="./assets/logo.jpg" alt="Logotipo Próximo Piso">
+    <h1>Próximo Piso</h1>
+    <p>Especialistas en venta de casas y departamentos en Guadalajara</p>
+  </div>
+  <div class="content">
+    <h2>Encuentra tu hogar ideal</h2>
+    <p>En Próximo Piso nos enfocamos en ofrecer propiedades con excelentes ubicaciones en el área metropolitana de Guadalajara. Ya sea que busques un departamento moderno o una casa para tu familia, nosotros tenemos la opción perfecta para ti.</p>
+
+    <div class="contacto">
+      <p><strong>Dirección:</strong> <a href="https://g.co/kgs/RD1r9Xw">Calle Ermita 1493, Guadalajara, Jalisco</a>
+      <a href="https://g.co/kgs/RD1r9Xw">
+      <img src="./assets/maps.png" class="icon" href="https://g.co/kgs/RD1r9Xw">
+      </a></p>
+      <p><strong>Teléfono y WhatsApp:</strong> <a href="https://wa.me/523317603524" target="_blank">33 1760 3524 <img src="./assets/whatsapp.png" class="icon"></a></p>
+    </div>
+  <div class="catalogo">
+    <h3><strong>Catálogo:</strong></h3>
+    <p>Visita nuestro catálogo en <strong><a href="http://proximopiso.wiggot.com/">Wiggot</a></strong>
+  </div>
+    <div class="redes">
+      <h3>Síguenos en redes sociales</h3>
+      <div class="redes">
+      <div class="container">
+        <a href="https://www.tiktok.com/@proximopiso" target="_blank"><img src="./assets/tiktok.png" class="icon">TikTok</a>
+      </div>
+      <div class="container">
+        <a href="https://www.instagram.com/inmobiliariaproximopiso" target="_blank"><img src="./assets/instagram.png" class="icon">Instagram</a>
+      </div>
+      <div class="container">
+        <a href="https://www.facebook.com/ProximoPISO" target="_blank"><img src="./assets/facebook.png" class="icon">Facebook</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Próximo Piso - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
