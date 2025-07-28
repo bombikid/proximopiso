@@ -6,6 +6,7 @@
   <title>Próximo Piso - Inmobiliaria en Guadalajara</title>
   <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
   <style>
@@ -26,11 +27,24 @@
       color: white;
       display: flex;
       flex-direction: row;
-      justify-content: left;
+      justify-content: space-between;
       align-items: center;
       text-shadow: 1px 1px 4px #000;
       position: relative;
       background-color: var(--dark);
+    }
+
+    .button{
+        color: black;
+        border-radius: 15px;
+        height: 25px;
+        background-image: linear-gradient(to bottom, gold, goldenrod);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 800;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     header img {
@@ -39,7 +53,7 @@
       align-items: flex-start;
       justify-content: left;
       max-width: 100px;
-      width: 80px;
+      width: 60px;
     }
     header h1 {
       font-size: 3rem;
@@ -53,6 +67,19 @@
       color: #bf9000;
       font-weight: lighter;
     }
+    .mainheader{ /* logo + text */
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+    .headerbuttons{
+      display: inline;
+      justify-content: space-evenly;
+
+    }
+
+    /* end of header */
+
     header p {
       font-size: 1.5rem;
       align-items: baseline;
@@ -140,9 +167,14 @@
 </head>
 <body>
   <header>
+    <div class="mainheader">
     <img src="./assets/logo.jpg"><h1 class="logofont">PRÓXIMO PISO INMOBILIARIA</h1>
-    
+    </div>
+    <a href = "./cat/fichas.html">
+    <button class="button">Catálogo</button>
+    </a>
   </header>
+
   <div class="hero">
     <img src="./assets/logo.jpg" alt="Logotipo Próximo Piso">
     <h1>Próximo Piso</h1>
@@ -161,7 +193,7 @@
     </div>
   <div class="catalogo">
     <h3><strong>Catálogo:</strong></h3>
-    <p>Visita nuestro catálogo en <strong><a href="http://proximopiso.wiggot.com/">Wiggot</a></strong>
+    <p>Visita nuestro catálogo en <strong><a href="http://proximopiso.wiggot.com/">Wiggot</a></strong> o en nuestra <strong><a href="./cat/fichas.html">página</a></strong>
   </div>
     <div class="redes">
       <h3>Síguenos en redes sociales</h3>

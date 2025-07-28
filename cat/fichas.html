@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fichas de propiedad</title>
+
+ <!-- <button class="button" onclick="hideFunction()">hide body</button> -->
+<a href="../index.html">
+<button class="button" id="inicio">◄ Inicio</button></a>
+
+<!-- // Calle 3 // <button class="button" onclick="replacePlaceholders(calle3)">Calle 3</button> -->
+  
+ <button class="button" onclick="replacePlaceholders(puntosur)">Punto Sur</button>
+ <button class="button" onclick="replacePlaceholders(tormenta)">Jardines del Bosque</button>
+ <script>
+ </script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ 
+</head>
+<body>
+  <header>
+    <p class="welcome">Bienvenido a nuestro catálogo, haz clic en un botón para ver información sobre la propiedad</p>
+  </header>
+  <div id="demo">
+  <div class="container">
+    
+    <div class="hero">
+      <div class="tag">{{casadepa}} EN {{ventarenta}}</div> <!--add VENTA / RENTA var-->
+      <div class="price">$ <span id = "precio">{{precio}}</span></div> <!--price var-->
+    <img src={{bgimg}} class="exampleimg" id="bgimage" alt=""><!--IMG prolly goes here, make var-->
+    </div>
+
+
+    
+  <div class="ubi">
+    <a href = "{{maps}}">
+    <img src="../assets/ubi.png" class="icon"><span class="num">{{ubicacion}}</span></a>
+  </div>
+
+    <div class="features">
+      <div class="tag"><strong><span class="num">{{rec}}</span></strong><img src="../assets/rec.png" class="icon"> Recámaras</div>        <!--add icons-->
+      <div class="tag"><strong><span class="num">{{bc}}</span></strong><img src="../assets/bc.png" class="icon"> Baños</div>             
+      <div class="tag"><strong><span class="num">{{est}}</span></strong><img src="../assets/est.png" class="icon"> Estacionamientos</div> 
+    </div>
+
+    
+    
+
+    <div class="details">
+      <div><span id="ter"></span>{{ter}}m² TERRENO</div>         <!--var ter-->
+      <div><span id = "const"></span>{{const}}m² CONSTRUCCIÓN</div>  <!--var const-->
+    </div>
+
+    <div class="gallery">
+      <img src="{{img1}}" alt="Foto 1"> <!--add img vars-->
+      <img src="{{img2}}" alt="Foto 2">
+      <img src="{{img3}}" alt="Foto 3">
+    </div>
+
+    <div class="description">
+      <h3>DESCRIPCIÓN</h3>
+      <p><span id = "descripcion">{{desc}}</span> <!--add main description-->
+      
+      </p>
+      <!--
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> //update list based on vars
+        <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        <li>Proin fermentum leo vel orci.</li>
+        <li>Venenatis urna cursus eget id velit ut tortor pretium.</li>
+        <li>Ipsum faucibus vitae aliquet nec.</li>
+      </ul>
+    </div>
+      -->
+
+    <!--finish later, no vars here-->
+    <div id="bottom">
+    <div class="contact"> 
+      <h4>INFORMES Y CITAS</h4>
+      <p><strong>Nombre:</strong> Rosalinda Flores</p>
+      <p><strong>Teléfono:</strong> <a href="https://wa.me/523317603524"> 33 1760 3524</a></p>
+      <p><strong>Dirección:</strong><a href = "https://g.co/kgs/RD1r9Xw"> Calle Ermita 1493, Guadalajara, Jalisco</a></p>
+      <p><strong>Sitio web:</strong> <a href="#">www.proximopisoinmobiliaria.mx</a></p>
+    </div>
+    <img src="../assets/logo.jpg" alt="logo" id="logo">
+    </div>
+  </div>
+</div>
+</div>
+  
+
+  <script src="scripts.js">
+  </script>
+</body>
+</html>
