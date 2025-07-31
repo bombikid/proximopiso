@@ -13,6 +13,7 @@
   
  <button class="button" onclick="replacePlaceholders(puntosur)">Punto Sur</button>
  <button class="button" onclick="replacePlaceholders(tormenta)">Jardines del Bosque</button>
+ <button class="button" onclick="replacePlaceholders(bosquereal)">Bosque Real</button>
  <script>
  </script>
  <link rel="stylesheet" type="text/css" href="style.css">
@@ -63,6 +64,13 @@
       <p><span id = "descripcion">{{desc}}</span> <!--add main description-->
       
       </p>
+      <hr>
+      <h3>Ubicación en Google Maps</h2>
+
+        <!-- STREET VIEW 
+         <iframe src="{{mapsembed}}" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      -->
+        <iframe src="{{mapsembed}}" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <!--
       <ul>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> //update list based on vars

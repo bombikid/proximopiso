@@ -23,6 +23,10 @@
       font-weight: 100;
       margin: 10px;
     }
+    h3{
+      text-transform: uppercase;
+      color: var(--primary);
+    }
 
     /* main */
 
@@ -123,14 +127,17 @@
       flex-wrap: nowrap;
       margin-right: 2px;
       margin-left: 2px;
+      overflow: auto;
+      
     }
 
     .gallery img {
-      width: 33.33%; /*keep it like this to ensure same width always*/
+      width: 33%; /*keep it like this to ensure same width always*/
       object-fit: cover;
       padding: 5px;
       z-index: 1;
       max-height: 200px;
+      
     }
 
 
