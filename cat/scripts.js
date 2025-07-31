@@ -41,8 +41,7 @@
     ubicacion : "Av. Punto Sur 6259, 45645 Los Gavilanes, Jal.",
     maps: "https://maps.app.goo.gl/c3a7h5ogVZ4PeaVRA",
     mapsembed : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1867.7722143446026!2d-103.44776312996251!3d20.565812797001993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428acab4041817b%3A0x141e5c2aa620d401!2sAv.%20Punto%20Sur%206259%2C%2045645%20Los%20Gavilanes%2C%20Jal.!5e0!3m2!1sen!2smx!4v1753907195696!5m2!1sen!2smx",
-    desc : "Excelente casa nueva en venta en PUNTO SUR ELITE, con terminados de lujo, a un costado de la Plaza Punto Sur",
-    
+    desc : "Excelente casa nueva en venta en PUNTO SUR ELITE, con terminados de lujo, a un costado de la Plaza Punto Sur, el condominio cuenta con Casa Club con alberca, Gym, salón de usos múltiples, terraza para eventos, alberca y seguridad las 24 hrs.\nEn planta baja cuenta con sala, comedor, medio baño, cocina integral con isla desayunadora de granito equipada con parrilla, campana y horno, área de lavado, jardín muy amplio y 2 estacionamientos.\nEn planta alta, 3 recámaras con baño completo cada una, las secundarias con clóset y la principal con vestidor muy amplio.",
     bgimg : "./puntosur/bgimg.jpg",
     img1 : "./puntosur/img1.jpg",
     img2 : "./puntosur/img2.jpg",
