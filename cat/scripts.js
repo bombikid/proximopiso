@@ -37,7 +37,7 @@
     rec : "3",
     bc : "3",
     est : "2",
-    precio : "9 200 000",
+    precio : "9 050 000",
     ubicacion : "Av. Punto Sur 6259, 45645 Los Gavilanes, Jal.",
     maps: "https://maps.app.goo.gl/c3a7h5ogVZ4PeaVRA",
     mapsembed : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1867.7722143446026!2d-103.44776312996251!3d20.565812797001993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428acab4041817b%3A0x141e5c2aa620d401!2sAv.%20Punto%20Sur%206259%2C%2045645%20Los%20Gavilanes%2C%20Jal.!5e0!3m2!1sen!2smx!4v1753907195696!5m2!1sen!2smx",
