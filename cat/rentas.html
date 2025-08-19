@@ -17,7 +17,15 @@
             --dark: #2b2d2c;
             --text: #fafafa;
         }
-
+        .w3-container{
+          align-items: stretch;
+        }
+        .equalHeight{
+          display: flex;
+        }
+        .equalHeight .w3-container{
+          flex: 1;
+        }
         /* footer // copy to VENTAS */
         .informes{
             /* FLEX Behavior*/
@@ -34,6 +42,14 @@
         .informes h4{
             margin-left: 5px;
         }
+        .informesText{
+          text-align: left;
+          justify-content: left;
+        }
+        .flextest{
+          align-items: stretch;
+          height: fit-content;
+        }
         #logo{
             width: 200px;
             align-items: end;
@@ -47,24 +63,39 @@
         }
         /* footer end */
 
+        /* Prop menu */
+        .propMenu{
+          width: 1000px;
+          background-color: #fafafa;
+
+        }
+        /*           */
+        html{
+            scroll-behavior: smooth;
+        }
      </style>
 </head>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+
+
+
     <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
   <div class="w3-container">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PORTFOLIO</b></h4>
+    <img src="../assets/favicon.jpg" style="width:15%;" class="w3-round"><br><br>
+    <h4><b>CATÁLOGO</b></h4>
     <p class="w3-text-grey">Template by W3.CSS</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-yellow"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES</a> 
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>INICIO</a> 
+    <a href="#informes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
   </div>
   <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -79,11 +110,14 @@
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
+
+
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
   <!-- Header -->
   <header id="portfolio">
+    
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
@@ -92,33 +126,46 @@
   </header>
   
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+
+  <div class="w3-row-padding" id="myWindow">
+
+    <!-- Card 1-->
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        
+      <a href="../lacima.html"><img src="../cat/la cima/bgimg.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white" id="myBtn">
+        <p><b>La Cima</b></p></
+      </a>
+        <p>Casa con 4 recámaras, 4 baños completos y 2 estacionamientos, en La Cima Coto G. Totalmente nueva e incluye aire acondicionado.</p>
+        <span><b>$ 35 000</b></span>
       </div>
     </div>
+    <!-- Card 2-->
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <a href="../cat/vallarta.html"><img src="../cat/vallarta/bgimg.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Av. Vallarta</b></p>
+        <p>Departamento con 2 recámaras, 2 baños completos y 2 estacionamientos, ubicado en planta baja.</p>
+      <span><b>$ 18 000</b></span>
       </div>
     </div>
+    <!-- Card 3 -->
     <div class="w3-third w3-container">
-      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="../cat/csanlorenzo/01ext.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Cañadas San Lorenzo</b></p>
+        <p>Departamento con 2 recámaras, 1 baño completo y 2 estacionamientos, en coto. Amueblado, equipado y mantenimiento incluido.</p>
+        <span><b>$ 14 000</b></span>
       </div>
     </div>
+<break>
+&emsp;
+</break>
   </div>
 
   <!-- Footer -->
-  <footer class="">
-    <div class="informes">
+  <footer>
+    <div class="informes" id="informes">
             <div class="informesText">
       <h4>INFORMES Y CITAS</h4>
       <p><strong>Nombre:</strong> Rosalinda Flores</p>
@@ -148,6 +195,18 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
 }
+function showProperty(){
+    document.getElementsByClassName("w3-main").style.display = "none";
+}
+
+$("#myBtn").click(function () {
+  $("#myWindow").toggle()
+})
+
+$("#hideBtn").click(function hideProp(){
+  document.getElementById("propMenu").style.display = "none";
+});
+
 </script>
 </body>
 </html>
