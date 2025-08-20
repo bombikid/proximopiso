@@ -8,7 +8,7 @@
   }
 }
     hideFunction();
-
+addEventListener.document.getElementById("galleryBtn");
 // DATABASES
     const calle3 = {
         nombre : "Se renta departamento en Loma Bonita",

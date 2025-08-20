@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ficha de propiedad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+
+:root{
+    --primary: goldenrod;
+            --dark: #2b2d2c;
+            --text: #fafafa;
+}
+.informes{
+            /* FLEX Behavior*/
+            display: flex;
+            justify-content: space-between;
+            /* TEXT Properties*/
+            color: var(--primary);
+            
+        }
+        .informes p{
+            color: var(--dark);
+            margin-left: 10px;
+        }
+        .informes h4{
+            margin-left: 5px;
+        }
+        .informesText{
+          text-align: left;
+          justify-content: left;
+        }
+        .flextest{
+          align-items: stretch;
+          height: fit-content;
+        }
+        .hText{
+            color: var(--primary);
+        }
+        #logo{
+            width: 200px;
+            align-items: end;
+        }
+.s3{
+  margin-top: 20px;
+}
+#desc{
+  text-align: justify;
+  text-justify: inter-word;
+}
+        @media (max-width: 480px){
+            .informes{
+                display: block;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+</style>
+</head>
+<body class="w3-content w3-border-left w3-border-right">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="../assets/favicon.jpg" style="width:15%;" class="w3-round"><br><br>
+    <h4><b>CATÁLOGO</b></h4>
+    
+  </div>
+  <div class="w3-bar-block">
+    <a href="../cat/rentas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-yellow"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES</a> 
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>INICIO</a> 
+    <a href="#informes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    
+  </div>
+  <p class="w3-text-grey">Template by W3.CSS</p>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <a href="javascript:void(0)" class="w3-left w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+  <span class="w3-bar-item">Información de la propiedad</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white" style="margin-left:260px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:80px"></div>
+
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <h2 class="hText" id="nombre"></h2>
+    <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/bgimg.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Exterior</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/ci.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Cocina</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/c1.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Recámara principal</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/bc.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Baño</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/s1.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Escaleras</p>
+      </div>
+    </div>
+    <!-- copy for each photo -->
+    <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/c2.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Recámara</p>
+      </div>
+    </div>
+    <!-- / copy -->
+     <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/p.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Patio</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img src="../cat/la cima/roof.jpg" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Roof garden</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/bgimg.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Frente">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/ci.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Cocina integral">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/c1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Escaleras">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/bc.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Recámara">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/s1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Escaleras">
+    </div>
+     <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/c2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="Recámara">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/p.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(7)" title="Patio">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/roof.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(8)" title="Roof garden">
+    </div>
+    <!-- photos of below section, src is grayed out part, update (counter)-->
+  </div>
+
+  <!-- end of photos section -->
+  <div class="w3-container" id="caracteristicas">
+    <h4><strong>Características</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-bed"></i> Recámaras: <span id="rec"></span></p>
+        <p><i class="fa fa-fw fa-bath"></i> Baños: <span id="bc"></span></p>
+        <p><i class="fa fa-fw fa-car"></i> Estacionamientos: <span id="est"></span></p>
+      </div>
+      <div class="w3-col s6">
+        <!--additional elements in right side-->
+        <p><img src="../assets/moreicons/up-right-and-down-left-from-center-solid-full.svg" class="fa fa-fw"></i>Terreno: <span id="ter"></span> m2</p>
+        <p><img src="../assets/moreicons/ruler-combined-solid-full.svg" class="fa fa-fw"></i>Construcción: <span id="const"></span> m2</p>
+      </div>
+    </div>
+    <hr>
+    
+    
+    
+    <h4><strong>Descripción</strong></h4>
+    <p id="desc"></p>
+    <i class="fa fa-fw fa-tag"></i>
+    <b>Precio de <span id="operacion"></span></b> $
+    <span id="precio"></span>
+    <hr>
+
+    <h4><strong>Amenidades</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-snowflake-o"></i> Aire acondicionado</p>
+        <p><i class="fa fa-fw fa-pagelines"></i> Roof garden</p>
+        <p><i class="fa fa-fw fa-home"></i> Casa club</p>
+      </div>
+      <div class="w3-col s6">
+        <p><img src="../assets/moreicons/basketball-solid-full.svg" class="fa fa-fw"></i> Cancha de básquet</p>
+        <p><i class="fa fa-fw fa-leaf"></i> Áreas verdes</p>
+        <p><i class="fa fa-fw fa-child"></i> Área para juegos infantiles</p>
+      </div>
+    </div>
+    <hr>
+
+    <h4><strong>Ubicación</strong></h4>
+    <p><a href="https://share.google/dCDlyi6A4MbssnT17">Av. de la Mancha 293, La Cima, 45134 Nuevo México, Jal.</a></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.054288085252!2d-103.410068!3d20.7485936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af7ead993b9b%3A0x1bc9ccb3f86b9b14!2sAv.%20de%20la%20Mancha%20293%2C%20La%20Cima%2C%2045134%20Nuevo%20M%C3%A9xico%2C%20Jal.!5e0!3m2!1sen!2smx!4v1754507121118!5m2!1sen!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <hr>
+     <h4><strong>Tour virtual</strong></h4>
+     <iframe src="https://app.lapentor.com/sphere/la-cima-244" frameborder="0" width="100%" height="400px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+  </div>
+  <hr>
+  
+  <!-- Contact -->
+  <footer class="w3-container w3-padding-16" style="margin-top:32px">
+    <div class="informes" id="informes">
+            <div class="informesText">
+      <h4>INFORMES Y CITAS</h4>
+      <p><strong>Nombre:</strong> Rosalinda Flores</p>
+      <p><strong>Teléfono:</strong> <a href="https://wa.me/523317603524"> 33 1760 3524</a></p>
+      <p><strong>Dirección:</strong> <a href = "https://g.co/kgs/RD1r9Xw"> Calle Ermita 1493, Guadalajara, Jalisco</a></p>
+      <p><strong>Sitio web:</strong> <a href="#">www.proximopisoinmobiliaria.mx</a></p>
+                </div>
+            <div class="informesImg">
+            <img src="../assets/logo.jpg" alt="logo" id="logo">
+            </div>
+    </div>
+</footer>
+
+<!-- End page content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-padding-large">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-button w3-xlarge w3-right w3-transparent"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join our mailing list to receive updates on available dates and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-green w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+    // my script
+    const lacima = {
+        nombre : "Everest 244, La Cima Coto G",
+        recNum : 4,
+        bc: 4,
+        est: 2,
+        ter: 145,
+        const: 260,
+        desc: ['Casa totalmente nueva en renta en la Cima, la casa cuenta con 4 recámaras una de ellas en planta baja, cada una con baño completo y clóset, además medio baño en planta baja, cocina integral equipada, área de servicio, terraza, cochera para 2 autos y un roof garden en tercer piso, cada recámara cuenta con aire acondicionado y persianas, además de aire acondicionado en el área social, la casa está lista para ser habitada, la renta ya incluye mantenimiento, el coto cuenta con salón de eventos, áreas verdes, cancha de básquet, juegos infantiles y seguridad 24/7.'],
+        precio: "35 000",
+        operacion: "renta",
+      }
+      let currentProp = lacima;
+    document.getElementById("rec").innerHTML = currentProp.recNum;
+    document.getElementById("bc").innerHTML = currentProp.bc;
+    document.getElementById("est").innerHTML = currentProp.est;
+    document.getElementById("ter").innerHTML = currentProp.ter;
+    document.getElementById("const").innerHTML = currentProp.const;
+    document.getElementById("rec").innerHTML = currentProp.recNum;
+    document.getElementById("desc").innerHTML = currentProp.desc;
+    document.getElementById("operacion").innerHTML = currentProp.operacion;
+    document.getElementById("precio").innerHTML = currentProp.precio;
+    document.getElementById("nombre").innerHTML = currentProp.nombre;
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>
