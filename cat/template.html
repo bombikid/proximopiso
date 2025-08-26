@@ -15,6 +15,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     --primary: goldenrod;
             --dark: #2b2d2c;
             --text: #fafafa;
+  --galImg1: url('./la cima/bgimg.jpg');
+
 }
 .informes{
             /* FLEX Behavior*/
@@ -78,7 +80,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-yellow"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN RENTA</a> 
-    <a href="../cat/ventas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN VENTA</a>
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN VENTA</a>
     <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>INICIO</a> 
     <a href="#informes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
   </div>
@@ -114,7 +116,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <br>
     <h2 class="hText" id="nombre"></h2>
     <div class="w3-display-container mySlides">
-    <img src="../cat/la cima/bgimg.jpg" style="width:100%;margin-bottom:-6px">
+    <img src="../cat/lacima/bgimg.jpg" style="width:100%;margin-bottom:-6px">
       <div class="w3-display-bottomleft w3-container w3-black">
         <p>Exterior</p>
       </div>
@@ -126,7 +128,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       </div>
     </div>
     <div class="w3-display-container mySlides">
-    <img src="../cat/la cima/c1.jpg" style="width:100%;margin-bottom:-6px">
+    <img id="gallery0" style="width:100%;margin-bottom:-6px">
       <div class="w3-display-bottomleft w3-container w3-black">
         <p>Recámara principal</p>
       </div>
@@ -167,20 +169,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   </div>
 
   <div class="w3-row-padding w3-section">
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/bgimg.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Frente">
+    <div class="w3-col s3"> 
+      <img id="gallery" class="demo w3-opacity w3-hover-opacity-off" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Frente">
     </div>
-    <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/ci.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Cocina integral">
+    <div class="w3-col s3"> <!-- js var try-->
+      <img class="demo w3-opacity w3-hover-opacity-off" src="" id="galImg1" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Cocina integral">
     </div>
     <div class="w3-col s3">
       <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/c1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Escaleras">
     </div>
     <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/bc.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Recámara">
+      <img id="gallery0" class="demo w3-opacity w3-hover-opacity-off" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Recámara">
     </div>
     <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/s1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Escaleras">
+      <img id="img4" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Escaleras">
     </div>
      <div class="w3-col s3">
       <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/c2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="Recámara">
@@ -189,7 +191,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/p.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(7)" title="Patio">
     </div>
     <div class="w3-col s3">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="../cat/la cima/roof.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(8)" title="Roof garden">
+      <img class="rec" id="rec" src="" class="demo w3-opacity w3-hover-opacity-off"  style="width:100%;cursor:pointer" onclick="currentDiv(8)" title="Roof garden">
     </div>
     <!-- photos of below section, src is grayed out part, update (counter)-->
   </div>
@@ -198,6 +200,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <div class="w3-container" id="caracteristicas">
     <h4><strong>Características</strong></h4>
     <div class="w3-row w3-large">
+      <img src="" id="galImg1">image test
+      <img src="" id="image" height="150px" width ="150px">
       <div class="w3-col s6">
         <p><i class="fa fa-fw fa-bed"></i> Recámaras: <span id="rec"></span></p>
         <p><i class="fa fa-fw fa-bath"></i> Baños: <span id="bc"></span></p>
@@ -214,6 +218,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     
     
     <h4><strong>Descripción</strong></h4>
+    <var id="path">image variable</var>
+    <img src="" id="event-1"></img>
+    <img id="imageVar" width="100px" height="100px">
+    <p>img test 5</p>
+
     <p id="desc"></p>
     <i class="fa fa-fw fa-tag"></i>
     <b>Precio de <span id="operacion"></span></b> $
@@ -223,9 +232,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <h4><strong>Amenidades</strong></h4>
     <div class="w3-row w3-large">
       <div class="w3-col s6">
-        <p><i class="fa fa-fw fa-snowflake-o"></i> Aire acondicionado</p>
-        <p><i class="fa fa-fw fa-pagelines"></i> Roof garden</p>
-        <p><i class="fa fa-fw fa-home"></i> Casa club</p>
+        <p><i class="fa fa-fw fa-snowflake-o"></i><span id="amen1"></span></p>
+        <p><i class="fa fa-fw fa-pagelines"></i><span id="amen2"></span></p>
+        <p><i class="fa fa-fw fa-home"></i> <span id="amen3"></span></p>
       </div>
       <div class="w3-col s6">
         <p><img src="../assets/moreicons/basketball-solid-full.svg" class="fa fa-fw"></i> Cancha de básquet</p>
@@ -236,7 +245,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     <hr>
 
     <h4><strong>Ubicación</strong></h4>
-    <p><a href="https://share.google/dCDlyi6A4MbssnT17">Av. de la Mancha 293, La Cima, 45134 Nuevo México, Jal.</a></p>
+    <p><a href="https://share.google/dCDlyi6A4MbssnT17"><span id="ubi"></span></a></p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.054288085252!2d-103.410068!3d20.7485936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af7ead993b9b%3A0x1bc9ccb3f86b9b14!2sAv.%20de%20la%20Mancha%20293%2C%20La%20Cima%2C%2045134%20Nuevo%20M%C3%A9xico%2C%20Jal.!5e0!3m2!1sen!2smx!4v1754507121118!5m2!1sen!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <hr>
      <h4><strong>Tour virtual</strong></h4>
@@ -278,9 +287,46 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <script>
     // my script
-    const lacima = {
+
+    const a1 = '../assets/logo.jpg';
+    const image = document.getElementById("image");
+    image.src = a1;
+
+    
+
+   
+   // img var
+    let gal0 = './la cima/bgimg.jpg';
+    const galImg0 = document.getElementById("gallery0");
+    galImg0.src = gal0;
+
+  /*
+    for(let prop in propiedad){
+    let instance = 0;
+    prop = propiedad[instance];
+    document.getElementById(`${prop}`).innerHTML = propiedad[instance];
+    instance++;
+  }
+    let numOfProps = Object.keys(currentProp).length;
+      console.log(numOfProps);
+      for (const [key, value] of Object.entries(lacima)) { 
+        
+        key = propiedad[0];
+        document.getElementById(`${key}`).innerHTML = currentProp.value;
+
+      }
+        */
+    /*
+      for(let prop in lacima){
+      if(Object.prototype.hasOwnProperty.call(currentProp, prop)) {
+    document.getElementById(`${prop}`).innerHTML = currentProp.est;
+      }
+    }
+      */
+const lacima = {
+        propid : "la cima",
         nombre : "Everest 244, La Cima Coto G",
-        recNum : 4,
+        rec : 4,
         bc: 4,
         est: 2,
         ter: "145 m2",
@@ -288,18 +334,58 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         desc: ['Casa totalmente nueva en renta en la Cima, la casa cuenta con 4 recámaras una de ellas en planta baja, cada una con baño completo y clóset, además medio baño en planta baja, cocina integral equipada, área de servicio, terraza, cochera para 2 autos y un roof garden en tercer piso, cada recámara cuenta con aire acondicionado y persianas, además de aire acondicionado en el área social, la casa está lista para ser habitada, la renta ya incluye mantenimiento, el coto cuenta con salón de eventos, áreas verdes, cancha de básquet, juegos infantiles y seguridad 24/7.'],
         precio: "35 000",
         operacion: "renta",
+        ubi: "Av Torremolinos 3500, Cañadas de San Lorenzo, 45130 Zapopan, Jal., Mexico",
+        amenidades: [
+          ac= "Aire acondicionado",
+          roof= "Roof garden",
+          cclub= "Casa Club",
+          averdes= "Áreas verdes",
+          inf= "Área de juegos infantiles"
+          ],
+          amenidades2:{
+            ac: "Aire acondicionado",
+            roof: "Roof garden",
+          }
       }
-      let currentProp = lacima;
-    document.getElementById("rec").innerHTML = currentProp.recNum;
-    document.getElementById("bc").innerHTML = currentProp.bc;
+   let currentProp = lacima;
+    let id1 = "bc";
+    document.getElementById("img4").innerHTML.src = ("./"+currentProp.propid+"/s1.jpg");
+
+    document.getElementById("rec").innerHTML = currentProp.propid;
+    document.getElementById("bc").innerHTML = currentProp.currentProp.propid;
     document.getElementById("est").innerHTML = currentProp.est;
     document.getElementById("ter").innerHTML = currentProp.ter;
     document.getElementById("const").innerHTML = currentProp.const;
-    document.getElementById("rec").innerHTML = currentProp.recNum;
-    document.getElementById("desc").innerHTML = currentProp.desc;
+    document.getElementsByClassName("rec").innerHTML = currentProp.recNum;
+    document.getElementsByClassName("rec").innerHTML.src = "../cat/la cima/p.jpg";
     document.getElementById("operacion").innerHTML = currentProp.operacion;
     document.getElementById("precio").innerHTML = currentProp.precio;
     document.getElementById("nombre").innerHTML = currentProp.nombre;
+    document.getElementById("ubi").innerHTML = currentProp.ubi;
+
+    document.getElementById("desc").innerHTML = descripcion;
+    
+    // gallery images
+    
+    let myArr = [
+      "rec","bc","est"
+    ]
+    let myVar = myArr[1];
+    document.getElementById(`${myVar}`).innerHTML = currentProp.myVar;
+
+    function amenidades(list,num){
+      let amen = "amen";
+      
+        document.getElementById(`amen${list}`).innerHTML = currentProp.amenidades[num];
+      
+    }
+    amenidades(2,0)
+    
+    document.getElementById("ubi").innerHTML = currentProp.ubi;
+
+    if (currentProp.const.length < 1){
+      document.getElementById("constSect").style.display = "none";
+    }
 // Script to open and close sidebar when on tablets and phones
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";

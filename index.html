@@ -36,8 +36,8 @@
 
     .button{
         color: black;
-        border-radius: 15px;
-        height: 25px;
+        border-radius: 5px;
+        height: 5vh;
         background-image: linear-gradient(to bottom, gold, goldenrod);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 800;
@@ -63,7 +63,7 @@
       font-family: "Comfortaa", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
-      font-size: 30px;
+      font-size: 25px;
       color: #bf9000;
       font-weight: lighter;
     }
@@ -77,7 +77,10 @@
       justify-content: space-evenly;
 
     }
-
+    .buttonContainer{
+      display: flex;
+      align-items: center;
+    }
     /* end of header */
 
     header p {
@@ -144,7 +147,7 @@
       text-align: center;
       padding: 1rem;
     }
-
+    
     /*phone size query*/
     @media (max-width: 768px) {
       .logofont{
@@ -170,9 +173,13 @@
     <div class="mainheader">
     <img src="./assets/logo.jpg"><h1 class="logofont">PRÓXIMO PISO INMOBILIARIA</h1>
     </div>
+    <div class="buttonContainer">
     <a href = "./cat/rentas.html">
-    <button class="button">Casas en renta</button>
+    <button class="button">Rentas</button>
+    <a href = "./cat/rentas.html">
+    <button class="button">Ventas</button>
     </a>
+    </div>
   </header>
 
   <div class="hero">
@@ -193,7 +200,7 @@
     </div>
   <div class="catalogo">
     <h3><strong>Catálogo:</strong></h3>
-    <p>Visita nuestro catálogo en <strong><a href="http://proximopiso.wiggot.com/">Wiggot</a></strong> o en nuestra <strong><a href="./cat/fichas.html">página</a></strong>
+    <p>Visita nuestro catálogo en <strong><a href="http://proximopiso.wiggot.com/">Wiggot</a></strong> o en nuestra <strong><a href="./cat/ventas.html">página</a></strong>
   </div>
     <div class="redes">
       <h3>Síguenos en redes sociales</h3>
