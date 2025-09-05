@@ -6,7 +6,10 @@
   <title>Próximo Piso - Inmobiliaria en Guadalajara</title>
   <link rel="icon" type="image/x-icon" href="./assets/favicon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
   <style>
@@ -141,6 +144,9 @@
       padding-left: 5px;
       padding-right: 5px;
     }
+    .linktext{
+      color: var(--primary);
+    }
     footer {
       background-color: #111;
       color: #fff;
@@ -149,9 +155,10 @@
     }
     
     /*phone size query*/
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
       .logofont{
-        font-size: 20px;
+        font-size: 15px;
+        padding-left: 5px;
       }
       .descripcion{
       display: contents;
@@ -169,17 +176,47 @@
   </style>
 </head>
 <body>
+  <!-- navbar before header -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="../assets/favicon.jpg" style="width:15%;" class="w3-round"><br><br>
+    
+    <h4><b>CATÁLOGO</b></h4>
+    <p class="w3-text-grey">Próximo Piso Inmobiliaria</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN RENTA</a> 
+    <a href="../cat/ventas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN VENTA</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-yellow"><i class="fa fa-home fa-fw w3-margin-right"></i>INICIO</a> 
+    <a href="#informes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</nav>
+
   <header>
-    <div class="mainheader">
-    <img src="./assets/logo.jpg"><h1 class="logofont">PRÓXIMO PISO INMOBILIARIA</h1>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1 class="logofont">PRÓXIMO PISO INMOBILIARIA</h1><img src="./assets/favicon-black.jpg">
     </div>
+    <!-- adding new menu button
     <div class="buttonContainer">
     <a href = "./cat/rentas.html">
     <button class="button">Rentas</button>
-    <a href = "./cat/rentas.html">
+    <a href = "./cat/ventas.html">
     <button class="button">Ventas</button>
     </a>
     </div>
+    -->
   </header>
 
   <div class="hero">
@@ -190,17 +227,16 @@
   <div class="content">
     <h2>Encuentra tu hogar ideal</h2>
     <p>En Próximo Piso nos enfocamos en ofrecer propiedades con excelentes ubicaciones en el área metropolitana de Guadalajara. Ya sea que busques un departamento moderno o una casa para tu familia, nosotros tenemos la opción perfecta para ti.</p>
-
     <div class="contacto">
-      <p><strong>Dirección:</strong> <a href="https://g.co/kgs/RD1r9Xw">Calle Ermita 1493, Guadalajara, Jalisco</a>
+      <p><strong>Dirección:</strong> <a href="https://g.co/kgs/RD1r9Xw" class="linktext">Calle Ermita 1493, Guadalajara, Jalisco</a>
       <a href="https://g.co/kgs/RD1r9Xw">
       <img src="./assets/maps.png" class="icon" href="https://g.co/kgs/RD1r9Xw">
       </a></p>
-      <p><strong>Teléfono y WhatsApp:</strong> <a href="https://wa.me/523317603524" target="_blank">33 1760 3524 <img src="./assets/whatsapp.png" class="icon"></a></p>
+      <p><strong>Teléfono y WhatsApp:</strong> <a href="https://wa.me/523317603524" target="_blank" class="linktext">33 1760 3524 <img src="./assets/whatsapp.png" class="icon"></a></p>
     </div>
   <div class="catalogo">
     <h3><strong>Catálogo:</strong></h3>
-    <p>Visita nuestro catálogo en <strong><a href="http://proximopiso.wiggot.com/">Wiggot</a></strong> o en nuestra <strong><a href="./cat/ventas.html">página</a></strong>
+    <p>Visita nuestro catálogo en <strong><a href="http://proximopiso.wiggot.com/" class="linktext">Wiggot</a></strong> o en nuestra <strong><a href="./cat/ventas.html" class="linktext">página</a></strong>
   </div>
     <div class="redes">
       <h3>Síguenos en redes sociales</h3>
@@ -221,5 +257,30 @@
   <footer>
     <p>&copy; 2025 Próximo Piso - Todos los derechos reservados</p>
   </footer>
+  
+  <script>
+    // Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+function showProperty(){
+    document.getElementsByClassName("w3-main").style.display = "none";
+}
+
+$("#myBtn").click(function () {
+  $("#myWindow").toggle()
+})
+
+$("#hideBtn").click(function hideProp(){
+  document.getElementById("propMenu").style.display = "none";
+});
+
+  </script>
 </body>
 </html>
