@@ -55,14 +55,17 @@
             align-items: end;
         }
         footer{ /* fixed footer / copy to all others */
-          position: fixed;
           max-width: inherit;
-    height: 270px;
-    background-color: var(--dark);
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
+          position: fixed;
+          height: 270px;
+          background-color: var(--dark);
+          bottom: 0px;
+          width: 100%;
+        }
+        #informes{
+          max-width: inherit;
+          
+          
         }
         @media (max-width: 480px){
             .informes{
@@ -175,16 +178,18 @@
 
   <!-- Footer -->
   <footer>
+  <!-- Footer -->
     <div class="informes" id="informes">
             <div class="informesText">
       <h4>INFORMES Y CITAS</h4>
       <p><strong>Nombre:</strong> Rosalinda Flores</p>
       <p><strong>Teléfono:</strong> <a href="https://wa.me/523317603524"> 33 1760 3524</a></p>
       <p><strong>Dirección:</strong> <a href = "https://g.co/kgs/RD1r9Xw"> Calle Ermita 1493, Guadalajara, Jalisco</a></p>
-      <p><strong>Sitio web:</strong> <a href="#">www.proximopisoinmobiliaria.mx</a></p>
+      <p><strong>Sitio web:</strong> <a href="www.proximopisoinmobiliaria.mx">www.proximopisoinmobiliaria.mx</a></p>
                 </div>
+                <img src="../assets/logo.jpg" alt="logo" id="logo">
             <div class="informesImg">
-            <img src="../assets/logo.jpg" alt="logo" id="logo">
+            
             </div>
             
     </div>
@@ -192,9 +197,11 @@
 
   </footer>
   
+  </div>
+  
 
 <!-- End page content -->
-</div>
+
 
 <script>
   
