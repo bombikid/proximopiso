@@ -1,0 +1,52 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+
+:root{
+    --primary: goldenrod;
+            --dark: #2b2d2c;
+            --text: #fafafa;
+}
+.informes{
+            /* FLEX Behavior*/
+            display: flex;
+            justify-content: space-between;
+            /* TEXT Properties*/
+            color: var(--primary);
+            
+        }
+        .informes p{
+            color: var(--dark);
+            margin-left: 10px;
+        }
+        .informes h4{
+            margin-left: 5px;
+        }
+        .informesText{
+          text-align: left;
+          justify-content: left;
+        }
+        .flextest{
+          align-items: stretch;
+          height: fit-content;
+        }
+        .hText{
+            color: var(--primary);
+        }
+        #logo{
+            width: 200px;
+            align-items: end;
+        }
+.s3{
+  margin-top: 20px;
+}
+#desc{
+  text-align: justify;
+  text-justify: inter-word;
+}
+        @media (max-width: 480px){
+            .informes{
+                display: block;
+                justify-content: center;
+                align-items: center;
+            }
+        }

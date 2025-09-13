@@ -275,21 +275,29 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 
 <script>
     // my script
+    const amenidadesIcons = {
+      ac: "../assets/moreicons/snow.svg",
+      alberca: "../assets/moreicons/alberca.svg",
+      amueblado: "../assets/moreicons/amueblado.svg",
+      
+    }
     const vallarta = {
         nombre : "Av Vallarta 5055",
         recNum : 2,
-        bc: 2,
+        bc: 3,
         est: 2,
         ter: "",
         const: 101,
         desc:['Departamento totalmente remodelado, cuenta con 2 recámaras, 2 baños completos, cocina integral, estudio, terraza, patio de servicio y estacionamiento cubierto para 2 autos con portón eléctrico.'],
         precio: "18 000",
         operacion: "renta",
+        testarray : ["item1", 2, true]
       }
       let currentProp = vallarta;
-    document.getElementById("rec").innerHTML = currentProp.recNum;
-    document.getElementById("bc").innerHTML = currentProp.bc;
-    document.getElementById("est").innerHTML = currentProp.est;
+
+    document.getElementById("rec").innerHTML = currentProp.bc;
+    document.getElementById("bc").textContent = "text"; // for any text
+    document.getElementById("est").textContent = currentProp.testarray[0]; // for amenidades
     document.getElementById("ter").innerHTML = currentProp.ter;
     document.getElementById("const").innerHTML = currentProp.const;
     document.getElementById("rec").innerHTML = currentProp.recNum;

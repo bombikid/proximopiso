@@ -171,41 +171,19 @@
        margin: 10px;
 
     }
+    header .fa { /* Hide Bars on phone */
+      display: none;
+    }
     }
 
   </style>
 </head>
 <body>
   <!-- navbar before header -->
-  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="../assets/favicon.jpg" style="width:15%;" class="w3-round"><br><br>
-    
-    <h4><b>CATÁLOGO</b></h4>
-    <p class="w3-text-grey">Próximo Piso Inmobiliaria</p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN RENTA</a> 
-    <a href="../cat/ventas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN VENTA</a>
-    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-yellow"><i class="fa fa-home fa-fw w3-margin-right"></i>INICIO</a> 
-    <a href="#informes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
-  </div>
-  <div class="w3-panel w3-large">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
   
-</nav>
 
   <header>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <button class="w3-button"><p style="font-size: larger;"><a href="./cat/ventas.html"><i class="fa fa-bars"></i> Catálogo</p></button></a>
     <h1 class="logofont">PRÓXIMO PISO INMOBILIARIA</h1><img src="./assets/favicon-black.jpg">
     </div>
     <!-- adding new menu button

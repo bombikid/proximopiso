@@ -54,6 +54,15 @@
             width: 200px;
             align-items: end;
         }
+        footer{ /* fixed footer / copy to all others */
+          position: fixed;
+    height: 270px;
+    background-color: var(--dark);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+        }
         @media (max-width: 480px){
             .informes{
                 display: block;
@@ -130,8 +139,8 @@
   <!-- First Photo Grid-->
 
   <div class="w3-row-padding" id="myWindow">
-
-    <!-- Card 1-->
+    
+    <!--
     <div class="w3-third w3-container w3-margin-bottom">
         
       <a href="../cat/lacima.html"><img src="../cat/la cima/bgimg.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
@@ -142,6 +151,7 @@
         <span><b>$ 35 000</b></span>
       </div>
     </div>
+    -->
     <!-- Card 2-->
      <!-- rentado 
     <div class="w3-third w3-container w3-margin-bottom">
@@ -154,16 +164,11 @@
     </div>
             -->
     <!-- Card 3 -->
-    <div class="w3-third w3-container">
-      <a href="../cat/loft5.html"><img src="../cat/loft5/01s.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
-      <div class="w3-container w3-white">
-        <p><b>Arenque 2747</b></p>
-        <p>Departamento tipo loft con 1 baño completo y estacionamiento para 1 coche. Amueblado, equipado, mantenimiento y servicios (agua, gas, internet, luz) incluidos.</p>
-        <span><b>$ 13 500</b></span>
-      </div>
-    </div>
-    
-
+  </div>
+  <div id="norentas" style="margin-left: 10%; display: block;">
+    &emsp;
+    <h2>Parece que no hay rentas disponibles por ahora</h2>
+    <h3>Revisa nuestro catálogo de <span style="color: var(--primary);"><a href="./ventas.html">ventas</a></span></h3>
   </div>
 &emsp;
 
@@ -180,15 +185,25 @@
             <div class="informesImg">
             <img src="../assets/logo.jpg" alt="logo" id="logo">
             </div>
+            
     </div>
+      <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
 
 <script>
+  
+  // if no cards
+  let mainSection = document.getElementById("myWindow");
+  let norentas = document.getElementById("norentas");
+  if(mainSection.children.length >= 1){
+    norentas.style.display = "none";
+  }
+
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";

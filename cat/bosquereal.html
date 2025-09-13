@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ficha de propiedad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+
+:root{
+    --primary: goldenrod;
+            --dark: #2b2d2c;
+            --text: #fafafa;
+}
+.informes{
+            /* FLEX Behavior*/
+            display: flex;
+            justify-content: space-between;
+            /* TEXT Properties*/
+            color: var(--primary);
+            
+        }
+        .informes p{
+            color: var(--dark);
+            margin-left: 10px;
+        }
+        .informes h4{
+            margin-left: 5px;
+        }
+        .informesText{
+          text-align: left;
+          justify-content: left;
+        }
+        .flextest{
+          align-items: stretch;
+          height: fit-content;
+        }
+        .hText{
+            color: var(--primary);
+        }
+        #logo{
+            width: 200px;
+            align-items: end;
+        }
+.s3{
+  margin-top: 20px;
+}
+#desc{
+  text-align: justify;
+  text-justify: inter-word;
+}
+        @media (max-width: 480px){
+            .informes{
+                display: block;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+</style>
+</head>
+<body class="w3-content w3-border-left w3-border-right">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="../assets/favicon.jpg" style="width:15%;" class="w3-round"><br><br>
+    
+    <h4><b>CATÁLOGO</b></h4>
+    <p class="w3-text-grey">Próximo Piso Inmobiliaria</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="./rentas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN RENTA</a> 
+    <a href="./ventas.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-amber"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROPIEDADES EN VENTA</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw w3-margin-right"></i>INICIO</a> 
+    <a href="#informes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACTO</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <a href="javascript:void(0)" class="w3-left w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  <span class="w3-bar-item">Información de la propiedad</span>
+  
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white" style="margin-left:260px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:80px"></div>
+
+  <!-- Slideshow Header -->
+   <!-- big image replacer -->
+  <div class="w3-container" id="apartment">
+    <br>
+    <h2 class="hText" id="nombre"><!--nombre de propiedad--></h2>
+    <div class="w3-display-container mySlides">
+    <img id="big1" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Exterior</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img id="big2" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p id="big2title">Cocina</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img id="big3" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Sala</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img id="big4" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Recámara principal</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img id="big5" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Recámara</p>
+      </div>
+    </div>
+    <!-- copy for each photo -->
+    <div class="w3-display-container mySlides">
+    <img id="big6" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Sala comedor</p>
+      </div>
+    </div>
+    <!-- / copy -->
+     <div class="w3-display-container mySlides">
+    <img id="big7" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Baño completo</p>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+    <img id="big8" src="" style="width:100%;margin-bottom:-6px">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p id="big8title">Interior</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- small image gallery -->
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img id="gal1" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(1)" title="Frente">
+    </div>
+    <div class="w3-col s3">
+      <img id="gal2" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(2)" title="Cocina integral">
+    </div>
+    <div class="w3-col s3">
+      <img id="gal3" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(3)" title="Sala">
+    </div>
+    <div class="w3-col s3">
+      <img id="gal4" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(4)" title="Recámara principal">
+    </div>
+    <div class="w3-col s3">
+      <img id="gal5" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(5)" title="Recámara">
+    </div>
+     <div class="w3-col s3">
+      <img id="gal6" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(6)" title="Sala comedor">
+    </div>
+    <div class="w3-col s3">
+      <img id="gal7" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(7)" title="Baño completo">
+    </div>
+    <div class="w3-col s3">
+      <img id="gal8" class="demo w3-opacity w3-hover-opacity-off" src="" style="width:100%;cursor:pointer" onclick="currentDiv(8)" title="Entrada">
+    </div>
+    <!-- photos of below section, src is grayed out part, update (counter)-->
+  </div>
+
+  <!-- end of photos section -->
+  <div class="w3-container" id="caracteristicas">
+    <!-- text vars -->
+    <h4><strong>Características</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-bed"></i> Recámaras: <span id="rec"></span></p>
+        <p><i class="fa fa-fw fa-bath"></i> Baños: <span id="bc"></span></p>
+        <p id="mbContainer"><img src="../assets/moreicons/mb.svg" class="fa fa-fw"></i> Medios baños: <span id="mb"></span></p>
+        <p><i class="fa fa-fw fa-car"></i> Autos: <span id="est"></span></p>
+      </div>
+      <div class="w3-col s6">
+        <!--additional elements in right side-->
+        <p><img src="../assets/moreicons/up-right-and-down-left-from-center-solid-full.svg" class="fa fa-fw"></i> Terreno: <p id="ter"></p>
+        <p id="constSect"><img src="../assets/moreicons/ruler-combined-solid-full.svg" class="fa fa-fw"></i> Construcción: <p id="const"></p>
+      </div>
+    </div>
+    <hr>
+    
+    
+    
+    <h4><strong>Descripción</strong></h4>
+    <p id="desc"></p>
+    <i class="fa fa-fw fa-tag"></i>
+    <b>Precio de <span id="operacion"></span></b> $
+    <span id="precio"></span>
+    <hr>
+
+    <h4><strong>Amenidades</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <!-- <br><br> OR <p><img><span> </p>-->
+        <img id="ami1" class="fa fa-fw"> <span id="am1"><img src="" class="fa fa-fw"></span>
+        <br><br>
+        <img id="ami2" class="fa fa-fw">  <span id="am2"></span>
+        <br><br>
+        <img id="ami3" class="fa fa-fw">  <span id="am3"></span>
+      </div>
+      <div id="extraAm" class="w3-col s6">
+        <img id="ami4" class="fa fa-fw"> <span id="am4"><img src="" class="fa fa-fw"></span>
+        <br><br>
+        <img id="ami5" class="fa fa-fw">  <span id="am5"></span>
+        <br><br>
+        <img id="ami6" class="fa fa-fw">  <span id="am6"></span>
+      </div>
+    </div>
+    <hr>
+
+    <h4><strong>Ubicación</strong></h4>
+    <p id="ubicacion"><a id="mapslink" href=""></a></p>
+    <iframe id="mapsembed" src="" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <div id="tour360section">
+    <hr>
+    <h4><strong>Tour virtual</strong></h4>
+    <iframe src="" frameborder="0" width="100%" height="400px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+    </div>
+</div>
+  <hr>
+  
+  <!-- Contact -->
+  <footer class="w3-container w3-padding-16" style="margin-top:32px">
+    <div class="informes" id="informes">
+            <div class="informesText">
+      <h4>INFORMES Y CITAS</h4>
+      <p><strong>Nombre:</strong> Rosalinda Flores</p>
+      <p><strong>Teléfono:</strong> <a href="https://wa.me/523317603524"> 33 1760 3524</a></p>
+      <p><strong>Dirección:</strong> <a href = "https://g.co/kgs/RD1r9Xw"> Calle Ermita 1493, Guadalajara, Jalisco</a></p>
+      <p><strong>Sitio web:</strong> <a href="#">www.proximopisoinmobiliaria.mx</a></p>
+                </div>
+            <div class="informesImg">
+            <img src="../assets/logo.jpg" alt="logo" id="logo">
+            </div>
+    </div>
+</footer>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+    // my script
+    const bosquereal = {
+        filename: "bosquereal",
+        nombre : "Fraccionamiento Bosque Real",
+        recNum : 4,
+        bc: 3,
+        mb : 1,
+        est: 2,
+        ter: "136 m2",
+        const: "190 m2",
+        desc: ["Excelente casa en Bosque Real, con 4 recámaras, 3 baños completos y un medio baño, estacionamiento para 2 autos y patio privado. Ubicada en Fraccionamiento Bosque Real, con amenidades como gimnasio, alberca, áreas verdes, casa club y espacio de coworking. "],
+        precio: "4 500 000",
+        operacion: "venta",
+        maps: "https://maps.app.goo.gl/4tPGBK4cPaD9URhN6",
+        ubi: "45645 Bosque Real Fraccionamiento, Jalisco",
+        mapsembed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4698.512296869679!2d-103.49452699999999!3d20.569129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDM0JzA4LjkiTiAxMDPCsDI5JzQwLjMiVw!5e1!3m2!1sen!2sat!4v1757746781560!5m2!1sen!2sat",
+        amenidades: ["Gimnasio","Alberca","Áreas verdes","Casa club","Coworking"]
+    }
+    const lacima = {
+        nombre : "Everest 244, La Cima Coto G",
+        recNum : 4,
+        bc: 4,
+        est: 2,
+        ter: "145 m2",
+        const: "260 m2",
+        desc: ['Casa totalmente nueva en renta en la Cima, la casa cuenta con 4 recámaras una de ellas en planta baja, cada una con baño completo y clóset, además medio baño en planta baja, cocina integral equipada, área de servicio, terraza, cochera para 2 autos y un roof garden en tercer piso, cada recámara cuenta con aire acondicionado y persianas, además de aire acondicionado en el área social, la casa está lista para ser habitada, la renta ya incluye mantenimiento, el coto cuenta con salón de eventos, áreas verdes, cancha de básquet, juegos infantiles y seguridad 24/7.'],
+        precio: "35 000",
+        operacion: "renta",
+      }
+      const csanlorenzo = {
+        nombre : "Cañadas San Lorenzo",
+        recNum : 2,
+        bc: 1,
+        est: 2,
+        ter: "65 m2",
+        const: "",
+        desc:['Se renta amplio departamento amueblado en Cañadas San Lorenzo Edificio H, el departamento cuenta con 2 recámaras, un baño completo, área de sala comedor, cocina integral con barra y cubierta de granito, área de lavado, estudio entre las recámaras, balcón con una vista fabulosa al bosque y 2 estacionamientos dentro del coto con seguridad privada 24/7, además el coto cuenta con áreas verdes, terraza y alberca. El costo de la renta ya incluye mantenimiento y todos los muebles y equipamiento.'],
+        precio: "14 000",
+        operacion: "renta",
+        amenidades: ["ac","alberca","roof garden"]
+      }
+      let currentProp = bosquereal;
+
+      
+      //            title                     //
+        document.getElementById("nombre").innerHTML = currentProp.nombre;
+
+      //            big image                 // DONE
+      let big1 = document.querySelector("#big1");
+      let big2 = document.querySelector("#big2");
+      let big3 = document.querySelector("#big3");
+      let big4 = document.querySelector("#big4");
+      let big5 = document.querySelector("#big5");
+      let big6 = document.querySelector("#big6");
+      let big7 = document.querySelector("#big7");
+      let big8 = document.querySelector("#big8");
+    //              replace                   //
+      let propFolder = currentProp.filename; // next naeme it inside obj
+      big1.src=`./${propFolder}/db/01f.jpg`;
+      big2.src = `./${propFolder}/db/02esc2.jpg`;  // changed title
+      let big2title = document.querySelector("#big2title");
+      big2title.textContent = "Segunda planta";
+      big3.src = `./${propFolder}/db/03s.jpg`;
+      big4.src = `./${propFolder}/db/04rp.jpg`;
+      big5.src = `./${propFolder}/db/05r2.jpg`;
+      big6.src = `./${propFolder}/db/07s.jpg`;
+      big7.src = `./${propFolder}/db/08bc.jpg`;
+      big8.src = `./${propFolder}/db/09ext.jpg`; // changed title
+      let big8title = document.querySelector("#big8title");
+      big8title.textContent = "Patio";
+    // name propfolder => name images 1, 2, 3, etc => iterate
+
+    //              gallery images             // DONE
+      let gal1 = document.getElementById("gal1");
+      let gal2 = document.querySelector("#gal2");
+      let gal3 = document.querySelector("#gal3");
+      let gal4 = document.querySelector("#gal4");
+      let gal5 = document.querySelector("#gal5");
+      let gal6 = document.querySelector("#gal6");
+      let gal7 = document.querySelector("#gal7");
+      let gal8 = document.querySelector("#gal8");
+
+      gal1.src = `./${propFolder}/db/01f.jpg`;
+      gal2.src = `./${propFolder}/db/02esc2.jpg`;
+      gal2.setAttribute("title","Piso 2");
+      gal3.src = `./${propFolder}/db/03s.jpg`;
+      gal4.src = `./${propFolder}/db/04rp.jpg`;
+      gal5.src = `./${propFolder}/db/05r2.jpg`;
+      gal6.src = `./${propFolder}/db/07s.jpg`;
+      gal7.src = `./${propFolder}/db/08bc.jpg`;
+      gal8.src = `./${propFolder}/db/09ext.jpg`;
+
+      gal8.setAttribute("title","Exterior");
+    //              replace                    //
+
+    
+    //            caracteristicas              //
+    let rec = document.querySelector("#rec");
+    let bc = document.querySelector("#bc");
+    let est = document.querySelector("#est");
+    let mb = document?.querySelector("#mb");
+    let mbContainer = document.querySelector("#mbContainer");
+    if(!Object.hasOwn(currentProp,"mb")){
+        mbContainer.style.display = "none";
+    } // WORKS ! 
+    rec.textContent = currentProp.recNum;
+    bc.textContent = currentProp.bc;
+    est.textContent = currentProp.est;
+    mb.textContent = currentProp?.mb;
+    
+    document.getElementById("ter").innerHTML = currentProp.ter;
+    document.getElementById("const").innerHTML = currentProp.const;
+    if (currentProp.const.length < 1){
+      document.getElementById("constSect").style.display = "none";
+    } // hide construccion
+    
+    //            descripcion                 //
+    document.querySelector("#desc").textContent = currentProp.desc;
+    document.getElementById("precio").innerHTML = currentProp.precio;
+    document.getElementById("operacion").innerHTML = currentProp.operacion;
+
+    //            amenidades                  //
+    let amArr = currentProp.amenidades;
+    let amSec2 = document.querySelector("#extraAm");
+    if(amArr.length <= 3){
+      amSec2.style.display = "none";
+    };
+    let am1 = document.querySelector("#am1");
+    let am2 = document.querySelector("#am2");
+    let am3 = document.querySelector("#am3");
+    let am4 = document.querySelector("#am4");
+    let am5 = document.querySelector("#am5");
+    let am6 = document.querySelector("#am6");
+    // icons
+    let ami1 = document.querySelector("#ami1");
+    let ami2 = document.querySelector("#ami2");
+    let ami3 = document.querySelector("#ami3");
+    let ami4 = document.querySelector("#ami4");
+    let ami5 = document.querySelector("#ami5");
+    let ami6 = document.querySelector("#ami6");
+    let iconPath = "../assets/moreicons/";
+    am1.textContent = currentProp.amenidades[0];
+    ami1.src = `${iconPath}/gym.svg`;
+    am2.textContent = currentProp.amenidades[1]; // text
+    ami2.src = "../assets/moreicons/alberca.svg"; // icon
+    am3.textContent = currentProp.amenidades[2];
+    ami3.src = `${iconPath}/averdes.svg`;
+
+    am4.textContent = currentProp.amenidades[3];
+    ami4.src = `${iconPath}/terraza.svg`;
+    am5.textContent = currentProp.amenidades[4]; // text
+    ami5.src = "../assets/moreicons/coworking.svg"; // icon
+    
+
+    //      ubicacion           //
+    let ubi = document.querySelector("#ubicacion");
+    let maps = document.querySelector("#mapslink");
+    let mapsembed = document.querySelector("#mapsembed");
+
+    ubi.textContent = currentProp.ubi;
+    maps.setAttribute("href",currentProp.maps);
+    mapsembed.src =  currentProp.mapsembed;
+
+    //      tour                //
+    let tour = document.querySelector("#tour360section");
+    if(!Object.hasOwn(currentProp,"tour")){
+        tour.style.display = "none";
+    }
+    
+
+    
+    
+    
+    
+    // copy if to other pages
+    
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

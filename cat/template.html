@@ -206,6 +206,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <p><i class="fa fa-fw fa-bed"></i> Recámaras: <span id="rec"></span></p>
         <p><i class="fa fa-fw fa-bath"></i> Baños: <span id="bc"></span></p>
         <p><i class="fa fa-fw fa-car"></i> Autos: <span id="est"></span></p>
+        <p id="#myTest">newTest<span id="spanTest"></span></p>
       </div>
       <div class="w3-col s6">
         <!--additional elements in right side-->
@@ -238,8 +239,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       </div>
       <div class="w3-col s6">
         <p><img src="../assets/moreicons/basketball-solid-full.svg" class="fa fa-fw"></i> Cancha de básquet</p>
-        <p><i class="fa fa-fw fa-leaf"></i> Áreas verdes</p>
+        <p id="amen3"><i class="fa fa-fw fa-leaf"></i> Áreas verdes</p>
         <p><i class="fa fa-fw fa-child"></i> Área para juegos infantiles</p>
+        <p>myAmen: </p><p id="amenidad3"></p>
       </div>
     </div>
     <hr>
@@ -292,7 +294,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
     const image = document.getElementById("image");
     image.src = a1;
 
-    
+    let myTest = document.querySelector("#myTest");
+    myTest.textContent = "testing";
+    myTest.textContent = lacima.est;
+    let spanTest = document.querySelectorAll("#spanTest");
+    spanTest.innerHTML = "<p>testing</p>";
+
 
    
    // img var
@@ -336,11 +343,11 @@ const lacima = {
         operacion: "renta",
         ubi: "Av Torremolinos 3500, Cañadas de San Lorenzo, 45130 Zapopan, Jal., Mexico",
         amenidades: [
-          ac= "Aire acondicionado",
-          roof= "Roof garden",
-          cclub= "Casa Club",
-          averdes= "Áreas verdes",
-          inf= "Área de juegos infantiles"
+          "Aire acondicionado",
+          "Roof garden",
+          "Casa Club",
+          "Áreas verdes",
+          "Área de juegos infantiles"
           ],
           amenidades2:{
             ac: "Aire acondicionado",
@@ -364,7 +371,10 @@ const lacima = {
     document.getElementById("ubi").innerHTML = currentProp.ubi;
 
     document.getElementById("desc").innerHTML = descripcion;
-    
+    let amenidad3 = document.getElementById("amenidad3");
+    amenidad3.textContent = currentProp["amenidades"][2];
+    amenidad3.innerHTML = "<p>hello</p>";
+    amenidad3.innerHTML = currentProp["amenidades"][2];
     // gallery images
     
     let myArr = [
